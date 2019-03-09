@@ -8,7 +8,9 @@
     "help": "mdx-deck"
   },
   "devDependencies": {
-    "mdx-deck": "^1.10.0"
+    "mdx-deck": "^1.10.0",
+    "mdx-deck-live-code": "^1.0.1",
+    "raw-loader": "^1.0.0"
   },
   "name": "react-hooks-prez",
   "version": "1.0.0"
