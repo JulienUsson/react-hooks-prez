@@ -1,6 +1,7 @@
 import { Head } from 'mdx-deck'
 export { default as theme } from './theme'
 import { LiveCode } from 'mdx-deck-live-code';
+import {createContext, useState, useEffect, useContext} from 'react'
 
 <Head>
   <title>React Hooks</title>
@@ -10,10 +11,44 @@ import { LiveCode } from 'mdx-deck-live-code';
 
 ---
 
-import {useState} from 'react'
+# React function components (RFC)
+
+---
+
+<LiveCode providerProps={{noInline: true}} code={require('!raw-loader!./examples/componentExample.js')} size='fullscreen' />
+
+---
+
+<LiveCode providerProps={{noInline: true}} code={require('!raw-loader!./examples/childrenExample.js')} size='fullscreen' />
+
+---
+
+# RFC with hook~~er~~s
+
+---
+
+## useState
+
+---
 
 <LiveCode code={require('!raw-loader!./examples/useStateExample.js')} providerProps={{scope: {useState}}} size='fullscreen' />
 
 ---
 
-Questions?
+## useEffect
+
+---
+
+<LiveCode code={require('!raw-loader!./examples/useEffectExample.js')} providerProps={{scope: {useState, useEffect}}} size='fullscreen' />
+
+---
+
+## useContext
+
+---
+
+<LiveCode providerProps={{noInline: true}} code={require('!raw-loader!./examples/useContextExample.js')} providerProps={{noInline: true, scope: {createContext, useContext}}} size='fullscreen' />
+
+---
+
+# Questions?
