@@ -1,7 +1,7 @@
 import { Head } from 'mdx-deck'
 export { default as theme } from './theme'
 import { LiveCode } from 'mdx-deck-live-code';
-import {createContext, useState, useEffect, useContext} from 'react'
+import { useState, useEffect, useContext, useCallback, useMemo, useRef } from 'react'
 
 <Head>
   <title>React Hooks</title>
@@ -47,7 +47,48 @@ import {createContext, useState, useEffect, useContext} from 'react'
 
 ---
 
-<LiveCode providerProps={{noInline: true}} code={require('!raw-loader!./examples/useContextExample.js')} providerProps={{noInline: true, scope: {createContext, useContext}}} size='fullscreen' />
+<LiveCode code={require('!raw-loader!./examples/useContextExample.js')} providerProps={{noInline: true, scope: {useContext}}} size='fullscreen' />
+
+---
+
+# Advanced hooks
+
+---
+
+## useCallback
+
+---
+
+<LiveCode code={require('!raw-loader!./examples/useCallbackExample.js')} providerProps={{noInline: true, scope: {useState, useCallback}}} size='fullscreen' />
+
+---
+
+## useMemo
+
+---
+
+<LiveCode code={require('!raw-loader!./examples/useMemoExample.js')} providerProps={{noInline: true, scope: {useState, useMemo}}} size='fullscreen' />
+
+---
+
+## useRef
+
+---
+
+<LiveCode code={require('!raw-loader!./examples/useRefExample.js')} providerProps={{scope: {useRef}}} size='fullscreen' />
+
+---
+
+# And others
+
+- useReducer
+- useImperativeHandle
+- useLayoutEffect
+- useDebugValue
+
+---
+
+# Custom hooks
 
 ---
 

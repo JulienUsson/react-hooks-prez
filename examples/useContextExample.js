@@ -1,4 +1,4 @@
-const ThemeContext = createContext();
+const ThemeContext = React.createContext();
 
 function DisplayTheme() {
   const context = useContext(ThemeContext);
