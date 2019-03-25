@@ -55,14 +55,6 @@ import { useState, useEffect, useContext, useCallback, useMemo, useRef } from 'r
 
 ---
 
-## useCallback
-
----
-
-<LiveCode code={require('!raw-loader!./examples/useCallbackExample.js')} providerProps={{noInline: true, scope: {useState, useCallback}}} size='fullscreen' />
-
----
-
 ## useMemo
 
 ---
@@ -81,6 +73,7 @@ import { useState, useEffect, useContext, useCallback, useMemo, useRef } from 'r
 
 # And others
 
+- useCallback
 - useReducer
 - useImperativeHandle
 - useLayoutEffect
@@ -89,6 +82,18 @@ import { useState, useEffect, useContext, useCallback, useMemo, useRef } from 'r
 ---
 
 # Custom hooks
+
+---
+
+<LiveCode code={require('!raw-loader!./examples/customHookExample.js')} providerProps={{noInline: true, scope: {useState, useEffect}}} size='fullscreen' />
+
+---
+
+# To sum up
+
+- Hooks are a _simpler_ way to write components
+- Backward compatible => no need to rewrite all your app
+- Factoring code between components (no more HoC)
 
 ---
 
